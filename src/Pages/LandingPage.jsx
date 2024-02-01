@@ -1,13 +1,11 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
-import pageBg from "../images/bg-simplify-section-desktop.svg";
 import OurService from "../components/OurService.jsx";
 import ourServiceData from "../data/ourServiceData.js";
-import { useState } from "react";
+import testimonialData from "../data/testimonialData.js";
+import Testimonial from "../components/Testimonial.jsx";
 
 function LandingPage() {
-  const [addMarginB, setMarginB] = useState(0);
-
   return (
     <div className={" relative mx-auto mt-4 w-375 md:w-1300"}>
       {/*  Absolute positioning is used to add background images to follow the design. A more
@@ -26,16 +24,15 @@ function LandingPage() {
         <Header />
 
         {/*    Services section*/}
-        <div>
-          {ourServiceData.map((service, index) => (
-            // eslint-disable-next-line react/jsx-key
-            <div className={index !== ourServiceData.length - 1 ? "mb-9 " : ""}>
-              <OurService service={service} />
-            </div>
-          ))}
-        </div>
+        {ourServiceData.map((service, index) => (
+          // eslint-disable-next-line react/jsx-key
+          <div className={index !== ourServiceData.length - 1 ? "mb-9 " : ""}>
+            <OurService service={service} />
+          </div>
+        ))}
       </div>
       <div>
+        <Testimonial testimonial={testimonialData} />
         <Footer />
       </div>
     </div>
