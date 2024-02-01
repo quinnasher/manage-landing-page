@@ -13,20 +13,20 @@ function Header() {
   return (
     <div>
       <header
-        className={"flex justify-between items-center w-340 relative md:w-full"}
+        className={"relative flex w-340 items-center justify-between md:w-full"}
       >
-        <a href={""} className={"w-28 inline-block"}>
+        <a href={""} className={"inline-block w-28"}>
           <img src={logo} alt="" className={"w-full object-cover"} />
         </a>
 
         <nav
           className={`${
             isHidden ? "" : "hidden"
-          } absolute bg-white shadow-lg rounded-sm-ext w-340 md:w-fit top-14 md:static md:block  md:shadow-none`}
+          } absolute top-14 z-40 w-340 rounded-sm-ext bg-white shadow-lg md:static md:block md:w-fit  md:shadow-none`}
         >
           <ul
             className={
-              "flex flex-col gap-6  items-center justify-center py-6 md:py-0 font-500 text-veryDarkBlue md:flex-row md:gap-4 md:text-sm"
+              "flex flex-col items-center  justify-center gap-6 py-6 font-500 text-veryDarkBlue md:flex-row md:gap-4 md:py-0 md:text-sm"
             }
           >
             <li>

@@ -6,10 +6,22 @@
   li > * {
     @apply list-none;
   }
+
+  .footer-ul li {
+    @apply px-6 py-2 md:px-0 md:py-2;
+  }
+
+  .footer-icons img {
+    @apply w-8 object-contain;
+  }
 }
 
 @layer components {
-}
-.btn {
-  @apply bg-brightRed rounded-3xl px-5 py-2 font-500 shadow-lg text-veryPaleRed;
+  .btn {
+    @apply rounded-3xl bg-brightRed px-5 py-2 font-500 text-veryPaleRed shadow-lg;
+  }
+
+  /*.service-number {*/
+  /*  @apply rounded-3xl bg-brightRed px-5 py-2;*/
+  /*}*/
 }
