@@ -18,7 +18,7 @@ function Value(props) {
 
           <div className={"flex flex-col gap-3  "}>
             <div className={"rounded-l-3xl bg-veryPaleRed md:bg-transparent"}>
-              <h2 className={"ml-18h  w-300 py-2  font-700 md:ml-0"}>
+              <h2 className={"ml-18  w-300 py-2  font-700 md:ml-0"}>
                 {value.tittle}
               </h2>
             </div>

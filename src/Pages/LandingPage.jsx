@@ -2,12 +2,12 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import Value from "../components/Value.jsx";
 import values from "../data/values.js";
-import testimonialData from "../data/testimonials.js";
+import testimonials from "../data/testimonials.js";
 import Testimonial from "../components/Testimonial.jsx";
 
 function LandingPage() {
   return (
-    <div className={" relative mx-auto mt-4 w-375 overflow-hidden md:w-1300"}>
+    <div className={" relative mx-auto w-375 overflow-hidden pt-4 md:w-1300"}>
       {/*Absolute positioning is used to add background images to follow the*/}
       {/*design. A more efficient way might be available, but this is the method I*/}
       {/*can implement*/}
@@ -28,7 +28,7 @@ function LandingPage() {
         <Value values={values} />
       </div>
       <div>
-        <Testimonial testimonial={testimonialData} />
+        <Testimonial testimonial={testimonials} />
         <Footer />
       </div>
     </div>
