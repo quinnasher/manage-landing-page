@@ -26,7 +26,7 @@ function Footer() {
           >
             <h2
               className={
-                "w-260 text-center text-3xl font-700 text-VeryLightGray  md:w-450 md:text-left"
+                "max-w-[300px] text-center text-5xl font-500 text-VeryLightGray  md:max-w-[350px] md:text-left md:text-3xl"
               }
             >
               Simplify how your team works today.
