@@ -70,13 +70,7 @@ function Testimonial(props) {
             ></button>
           ))}
         </div>
-        <button
-          className={
-            "btn mx-auto mt-10 md:absolute md:bottom-[30rem] md:left-0 md:right-0"
-          }
-        >
-          Get Started
-        </button>
+        <button className={"btn mx-auto mt-10  md:-mt-10"}>Get Started</button>
       </div>
     </div>
   );

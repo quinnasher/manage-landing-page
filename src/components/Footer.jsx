@@ -33,7 +33,7 @@ function Footer() {
             </h2>
             <button
               className={
-                "mt-6 rounded-3xl bg-VeryLightGray px-5 py-2 font-500 text-brightRed shadow-lg md:mt-0"
+                "mt-6  rounded-3xl bg-VeryLightGray px-5 py-2 font-500 text-brightRed shadow-lg md:mt-0"
               }
             >
               Get started
