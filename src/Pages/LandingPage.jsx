@@ -13,7 +13,9 @@ import Chart from "../components/Chart.jsx";
 
 function LandingPage() {
   return (
-    <div className={" relative mx-auto w-375 overflow-hidden pt-4 md:w-1300"}>
+    <div
+      className={" relative mx-auto w-375 overflow-hidden pt-4 md:w-[1263px]"}
+    >
       {/*Absolute positioning is used to add background images to follow the*/}
       {/*design. A more efficient way might be available, but this is the method I*/}
       {/*can implement*/}
