@@ -29,32 +29,36 @@ function Testimonial(props) {
   }, [indices, isMobile, nextTestimonial]);
 
   return (
-    <div className={"relative flex  flex-col md:flex-row md:justify-between"}>
-      {indices.map((index) => (
-        <section
-          key={index}
-          className={
-            "md:w-400 relative mx-auto mb-6 flex w-360 flex-col items-center justify-center bg-VeryLightGray px-6 py-12 md:mb-20 md:px-10"
-          }
-        >
-          <img
-            className={"absolute -top-7 h-14 w-14 rounded-full"}
-            src={testimonial[index].image}
-            alt=""
-          />
-
-          <h3 className={"mb-6 font-700"}>{testimonial[index].name}</h3>
-          <p
+    <div>
+      <div
+        className={"relative flex w-full  flex-col justify-between md:flex-row"}
+      >
+        {indices.map((index) => (
+          <section
+            key={index}
             className={
-              "text-center leading-normal tracking-normal text-darkGrayishBlue"
+              "md:w-420 w-350 relative mx-auto mb-6 flex flex-col items-center justify-center bg-VeryLightGray px-6 py-12 md:mx-0 md:mb-20 md:px-10"
             }
           >
-            {testimonial[index].testimony}
-          </p>
-        </section>
-      ))}
+            <img
+              className={"absolute -top-7 h-14 w-14 rounded-full"}
+              src={testimonial[index].image}
+              alt=""
+            />
 
-      <div className={" mx-auto "}>
+            <h3 className={"mb-6 font-700"}>{testimonial[index].name}</h3>
+            <p
+              className={
+                "text-center leading-normal tracking-normal text-darkGrayishBlue"
+              }
+            >
+              {testimonial[index].testimony}
+            </p>
+          </section>
+        ))}
+      </div>
+
+      <div className={"flex flex-col "}>
         <div className={"mx-auto flex justify-center gap-2 md:hidden"}>
           {testimonial.map((_, index) => (
             <button
@@ -68,7 +72,7 @@ function Testimonial(props) {
         </div>
         <button
           className={
-            "btn mx-auto mt-10 md:absolute md:-bottom-0 md:left-0 md:right-0"
+            "btn mx-auto mt-10 md:absolute md:bottom-[30rem] md:left-0 md:right-0"
           }
         >
           Get Started

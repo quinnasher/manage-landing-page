@@ -1,6 +1,6 @@
 function Value(props) {
   return (
-    <div>
+    <div className={"flex flex-col gap-8"}>
       {/* eslint-disable-next-line react/prop-types */}
       {props.values.map((value, index) => (
         // eslint-disable-next-line react/jsx-key

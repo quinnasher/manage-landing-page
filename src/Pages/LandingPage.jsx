@@ -4,6 +4,12 @@ import Value from "../components/Value.jsx";
 import values from "../data/values.js";
 import testimonials from "../data/testimonials.js";
 import Testimonial from "../components/Testimonial.jsx";
+import Unique from "../components/Unique.jsx";
+import uniqueProps from "../data/uniqueProps.js";
+import visionProps from "../data/visionProps.js";
+import Vision from "../components/Vision.jsx";
+import chartImg from "../images/illustration-intro.svg";
+import Chart from "../components/Chart.jsx";
 
 function LandingPage() {
   return (
@@ -22,14 +28,39 @@ function LandingPage() {
         }
       ></div>
       <div className={"mx-auto w-340 md:w-1100"}>
-        <Header />
+        <div className={"mb-14 md:mb-24"}>
+          <Header />
+        </div>
 
-        {/*    Services section*/}
-        <Value values={values} />
+        <div className={"mb-14 flex flex-col-reverse md:mb-24 md:flex-row"}>
+          <div>
+            <Vision vision={visionProps} />
+          </div>
+
+          <div>
+            <Chart image={chartImg} />
+          </div>
+        </div>
+        <div
+          className={
+            "mb-14 flex flex-col justify-between gap-12 md:mb-24 md:flex-row md:gap-0"
+          }
+        >
+          <div className={""}>
+            <Unique uniqueProps={uniqueProps} />
+          </div>
+          <div className={""}>
+            <Value values={values} />
+          </div>
+        </div>
       </div>
       <div>
-        <Testimonial testimonial={testimonials} />
-        <Footer />
+        <div className={"mb-14 md:mb-24"}>
+          <Testimonial testimonial={testimonials} />
+        </div>
+        <div className={""}>
+          <Footer />
+        </div>
       </div>
     </div>
   );
